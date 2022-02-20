@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.netology</groupId>
-    <artifactId>manager</artifactId>
+    <artifactId>statistics</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -35,6 +35,22 @@
     </dependencies>
 
 
+    <!--    <dependencies>-->
+<!--        <dependency>-->
+<!--            <groupId>org.junit.jupiter</groupId>-->
+<!--            <artifactId>junit-jupiter</artifactId>-->
+<!--            <version>5.8.2</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--            <version>1.18.22</version>-->
+<!--            <scope>provided</scope>-->
+<!--        </dependency>-->
+
+<!--    </dependencies>-->
+
     <build>
         <plugins>
             <plugin>
@@ -48,7 +64,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.7</version>
+                <version>0.8.5</version>
                 <executions>
                     <execution>
                         <id>prepare-agent</id>
@@ -58,16 +74,10 @@
                         </goals>
                     </execution>
                     <execution>
-                        <id>report</id>
+                        <id>report/check</id>
                         <phase>verify</phase>
                         <goals>
                             <goal>report</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>check</id>
-                        <phase>verify</phase>
-                        <goals>
                             <goal>check</goal>
                         </goals>
                     </execution>
@@ -91,5 +101,3 @@
     </build>
 
 </project>
-
-
